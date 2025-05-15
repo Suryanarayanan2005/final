@@ -99,8 +99,19 @@ const [others, setOthers] = useState('');
               if (val !== 'Yes') setownership('');
             }}
           />
+
+                   {/* 26. Patta Number */}
+          <Text style={styles.label}>26. Patta Number</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Enter patta number"
+            placeholderTextColor="#888"
+            value={pattaNumber}
+            onChangeText={setPattaNumber}
+          />
+
           {/* 24. Well for Irrigation */}
-          <Text style={styles.label}>26. Well for Irrigation</Text>
+          <Text style={styles.label}>27. Well for Irrigation</Text>
           <RadioOption
             options={['Yes', 'No']}
             value={irrigation}
@@ -112,11 +123,11 @@ const [others, setOthers] = useState('');
 
           {irrigation === 'Yes' && (
             <>
-              <Text style={styles.label}>Area irrigated (ha)</Text>
+              <Text style={styles.label}>No of Wells (ha)</Text>
               <TextInput
                 style={styles.input}
                 keyboardType="numeric"
-                placeholder="Enter area irrigated"
+                placeholder="Enter no of Wells"
                 placeholderTextColor="#888"
                 value={areaIrrigated}
                 onChangeText={setAreaIrrigated}
@@ -124,7 +135,7 @@ const [others, setOthers] = useState('');
             </>
           )}
 
-<Text style={styles.label}>27. Irrigated Lands (ha)</Text>
+<Text style={styles.label}>28. Irrigated Lands (ha)</Text>
 <View style={styles.row}>
   <View style={styles.inputHalfWrapper}>
     <Text style={styles.subLabel}>Rainfed</Text>
@@ -162,18 +173,9 @@ const [others, setOthers] = useState('');
 </View>
 
 
-          {/* 26. Patta Number */}
-          <Text style={styles.label}>28. Patta Number</Text>
-          <TextInput
-            style={styles.input}
-            placeholder="Enter patta number"
-            placeholderTextColor="#888"
-            value={pattaNumber}
-            onChangeText={setPattaNumber}
-          />
 
           {/* 27. Total Area */}
-          <Text style={styles.label}>29. Total Area (ha)</Text>
+          <Text style={styles.label}>29. Total Land Holding</Text>
           <TextInput
             style={styles.input}
             placeholder="Enter total area"

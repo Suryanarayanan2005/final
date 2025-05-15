@@ -104,7 +104,7 @@ export default function PreviewPage() {
           <Text style={styles.value}></Text>
         </View>
         {renderField('28. Patta Number', '')}
-        {renderField('29. Total Area (ha)', '')}
+        {renderField('29. Total Land Holding', '')}
         {renderField('30. Taluk', '')}
         {renderField('31. Firka', '')}
         {renderField('32. Revenue Village', '')}
@@ -147,14 +147,13 @@ export default function PreviewPage() {
           <Text style={styles.value}></Text>
         </View>
         {renderField('36. Soil Type', '')}
-        {renderField('37. Land to benefit (ha)', '')}
         {renderField('38. Date of Inspection', '')}
         {renderField('39. Type of plantation proposed', '')}
         {renderField('40. Area benefited by proposed works (ha)', '')}
         {renderField('41. Any other works proposed', '')}
-        {renderField('42. PRADAN Contribution', '')}
-        {renderField('43. Farmer Contribution', '')}
-        {renderField('44. Total Estimate Amount', '')}
+        {renderField('42. PRADAN contribution (in Rs)', '')}
+        {renderField('43. Farmer contribution (in Rs)', '')}
+        {renderField('44. Total Estimate Amount (in Rs)', '')}
 
         <View style={styles.editButtonContainer}>
           <TouchableOpacity style={styles.editBtn}onPress={() => {

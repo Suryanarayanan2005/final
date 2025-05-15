@@ -43,7 +43,7 @@ const BasicDetailsForm = () => {
 
   const [isEditable, setIsEditable] = useState(true); // All fields should be editable now
 
-  // Recalculate total area and total amount when relevant fields change
+  // Recalculate total area and Total Amount (in Rs) when relevant fields change
   useEffect(() => {
     const { length, breadth, depth, pradanContribution, farmerContribution } = formData;
 
@@ -102,7 +102,7 @@ const BasicDetailsForm = () => {
         { label: 'Length (m)', field: 'length' },
         { label: 'Breadth (m)', field: 'breadth' },
         { label: 'Depth (m)', field: 'depth' },
-        { label: 'Total Area (cu m)', field: 'totalArea', editable: false }, // Display the calculated value
+        { label: 'Total Volume (cu m)', field: 'totalArea', editable: false }, // Display the calculated value
       ].map((item, index) => (
         <View style={styles.formGroup} key={index}>
           <Text style={styles.label}>{item.label}</Text>
@@ -117,9 +117,9 @@ const BasicDetailsForm = () => {
       ))}
 
       {[ 
-        { label: 'Pradan Contribution', field: 'pradanContribution' },
-        { label: 'Farmer Contribution', field: 'farmerContribution' },
-        { label: 'Total Amount', field: 'totalAmount', editable: false }, // Display the total amount
+        { label: 'PRADAN contribution (in Rs)', field: 'pradanContribution' },
+        { label: 'Farmer contribution (in Rs)', field: 'farmerContribution' },
+        { label: 'Total Amount (in Rs)', field: 'totalAmount', editable: false }, // Display the Total Amount (in Rs)
       ].map((item, index) => (
         <View style={styles.formGroup} key={index}>
           <Text style={styles.label}>{item.label}</Text>

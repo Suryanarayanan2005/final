@@ -110,9 +110,9 @@ const BasicDetailsForm = () => {
 
       {[ 
         { label: 'Total Area (in Hectare)', field: 'totalArea' },
-        { label: 'Pradan Contribution', field: 'pradanContribution' },
-        { label: 'Farmer Contribution', field: 'farmerContribution' },
-        { label: 'Total Amount', field: 'totalAmount', editable: false },
+        { label: 'PRADAN contribution (in Rs)', field: 'pradanContribution' },
+        { label: 'Farmer contribution (in Rs)', field: 'farmerContribution' },
+        { label: 'Total Amount (in Rs)', field: 'totalAmount', editable: false },
       ].map((item, index) => (
         <View style={styles.formGroup} key={index}>
           <Text style={styles.label}>{item.label}</Text>
@@ -130,7 +130,7 @@ const BasicDetailsForm = () => {
       <View style={styles.formGroup}>
         <Text style={styles.label}>Plantation Details</Text>
         <View style={styles.tableHeader}>
-          <Text style={styles.tableHeaderText}>Type</Text>
+          <Text style={styles.tableHeaderText}>Variety</Text>
           <Text style={styles.tableHeaderText}>Number</Text>
           <Text style={styles.tableHeaderText}>Price</Text>
         </View>

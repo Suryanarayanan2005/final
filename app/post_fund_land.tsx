@@ -79,8 +79,8 @@ const BasicDetailsForm = () => {
 
 {[
   { label: 'Total Area', field: 'totalArea' },
-  { label: 'Pradan Contribution', field: 'pradanContribution' },
-  { label: 'Farmer Contribution', field: 'farmerContribution' },
+  { label: 'PRADAN contribution (in Rs)', field: 'pradanContribution' },
+  { label: 'Farmer contribution (in Rs)', field: 'farmerContribution' },
 ].map((item, index) => (
   <View style={styles.formGroup} key={index}>
     <Text style={styles.label}>{item.label}</Text>

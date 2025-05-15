@@ -105,15 +105,7 @@ export default function LandDevelopmentScreen() {
           onToggle={(opt) => handleToggle(opt, soilType, setSoilType)}
         />
 
-        <Text style={styles.label}>37. Land to benefit (ha)</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="Enter land area"
-          placeholderTextColor="#888"
-          value={landBenefit}
-          onChangeText={setLandBenefit}
-          keyboardType="numeric"
-        />
+ 
 
         <Text style={styles.label}>38. Date of Inspection</Text>
         <TextInput
@@ -163,7 +155,7 @@ export default function LandDevelopmentScreen() {
           onChangeText={setOtherWorks}
         />
 
-        <Text style={styles.label}>42. PRADAN Contribution</Text>
+        <Text style={styles.label}>42. PRADAN contribution (in Rs)</Text>
         <TextInput
           style={styles.input}
           placeholder="Enter amount"
@@ -173,7 +165,7 @@ export default function LandDevelopmentScreen() {
           keyboardType="numeric"
         />
 
-        <Text style={styles.label}>43. Farmer Contribution</Text>
+        <Text style={styles.label}>43. Farmer contribution (in Rs)</Text>
         <TextInput
           style={styles.input}
           placeholder="Enter amount"
@@ -183,7 +175,7 @@ export default function LandDevelopmentScreen() {
           keyboardType="numeric"
         />
 
-        <Text style={styles.label}>44. Total Estimate Amount</Text>
+        <Text style={styles.label}>44. Total Estimate Amount (in Rs)</Text>
         <TextInput
           style={styles.input}
           placeholder="Enter amount"
