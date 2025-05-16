@@ -28,15 +28,17 @@ export default function PreviewPage() {
       
       <View style={styles.card}>
         <Text style={styles.pageTitle}>Preview</Text>
+
+                 <View style={styles.imageContainer}>
+                <Image
+                  source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYr59QqXDLWbSy6A1b0wOP-sxDEFvHLyB-LA&s' }}
+                  style={styles.photo}
+                  resizeMode="cover"
+                />
+              </View>
+
         <Text style={styles.sectionTitle}>Basic Details</Text>
-        <View style={styles.imageContainer}>
-  <Image
-    source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYr59QqXDLWbSy6A1b0wOP-sxDEFvHLyB-LA&s' }} // Replace this with your image URI or local image
-    style={styles.photo}
-    resizeMode="cover"
-  />
-  {/* <Text style={styles.photoLabel}>Photo of the Farmer</Text> */}
-</View>
+
 
 
         {renderField('1. Name of Farmer', '')}
