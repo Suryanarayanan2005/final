@@ -25,10 +25,6 @@ export default function PreviewPage() {
   <Text style={styles.heading_land}>LAND REDEVELOPMENT FORM</Text>
 </View>
 
-      
-      <View style={styles.card}>
-        <Text style={styles.pageTitle}>Preview</Text>
-
                  <View style={styles.imageContainer}>
                 <Image
                   source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYr59QqXDLWbSy6A1b0wOP-sxDEFvHLyB-LA&s' }}
@@ -36,6 +32,12 @@ export default function PreviewPage() {
                   resizeMode="cover"
                 />
               </View>
+
+      
+      <View style={styles.card}>
+        <Text style={styles.pageTitle}>Preview</Text>
+
+
 
         <Text style={styles.sectionTitle}>Basic Details</Text>
 
@@ -254,8 +256,8 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     position: 'absolute',
-    top: height * 0.03,     // Adjust vertical offset
-    right: width * 0.05,    // Align to right with some margin
+    top: height * 0.13,     // Adjust vertical offset
+    right: width * 0.09,    // Align to right with some margin
     alignItems: 'center',
     zIndex: 10,             // Ensure it stays on top
   },
